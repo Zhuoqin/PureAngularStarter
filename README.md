@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Install
 
-Run 'npm install' before you start it, all files will be stalled in node_modules and you can find them in package.json
+Run `npm install` before you start it, all files will be stalled in node_modules and you can find them in package.json
 
 ## Development server
 
