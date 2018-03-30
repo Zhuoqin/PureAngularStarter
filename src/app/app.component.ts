@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 declare var $: any;
 
@@ -19,6 +20,17 @@ export class AppComponent implements AfterViewInit {
         {data: [4, 3.5, 5, 5, 4], label: '2017'},
         {data: [4, 3, 5, 4.5, 5], label: '2018'}
     ];
+
+    public options = {
+        maintainAspectRatio: true,
+        scale: {
+            ticks: {
+                beginAtZero: true,
+                max: 5,
+                stepSize: 1
+            }
+        }
+    };
 
     ngAfterViewInit(): void {
         $('.icon-test').fadeIn(1000);

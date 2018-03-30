@@ -7,11 +7,12 @@ import {AppComponent} from './app.component';
 import {CommonModule} from '@angular/common';
 import {NgMaterialModule} from './ngMaterial.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CarZoneComponent} from './car-zone.component';
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent, CarZoneComponent
     ],
     imports: [
         BrowserModule,
