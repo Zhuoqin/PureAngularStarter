@@ -1,4 +1,5 @@
 import {Component, AfterViewInit} from '@angular/core';
+
 declare var $: any;
 
 @Component({
@@ -8,11 +9,17 @@ declare var $: any;
 })
 export class AppComponent implements AfterViewInit {
     title = 'app';
-    foods = [
-        {value: 'steak-0', viewValue: 'Steak'},
-        {value: 'pizza-1', viewValue: 'Pizza'},
-        {value: 'tacos-2', viewValue: 'Tacos'}
+
+    // Radar
+    public radarChartType = 'radar';
+
+    public radarChartLabels: string[] = ['category 1', 'category 2', 'category 3', 'category 4', 'category 5'];
+
+    public radarChartData: any = [
+        {data: [4, 3.5, 5, 5, 4], label: '2017'},
+        {data: [4, 3, 5, 4.5, 5], label: '2018'}
     ];
+
     ngAfterViewInit(): void {
         $('.icon-test').fadeIn(1000);
         $('h1').hide();
