@@ -1,7 +1,7 @@
-import {Component, AfterViewInit} from '@angular/core';
-import {Router} from "@angular/router";
+import {Component, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 
 declare var $: any;
+declare var SimpleMDE: any;
 
 @Component({
     selector: 'app-root',
@@ -9,8 +9,10 @@ declare var $: any;
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-    title = 'app';
+    @ViewChild('simplemde') textarea: ElementRef;
 
+    title = 'app';
+    text = 'test';
     // Radar
     public radarChartType = 'radar';
 
@@ -35,5 +37,10 @@ export class AppComponent implements AfterViewInit {
     ngAfterViewInit(): void {
         $('.icon-test').fadeIn(1000);
         $('h1').hide();
+
+        var mde = new SimpleMDE({
+            element: this.textarea.nativeElement,
+            showIcons: ['code', 'table']
+        });
     }
 }

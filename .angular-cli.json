@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "sass/styles.scss",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/simplemde/dist/simplemde.min.css"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
@@ -33,6 +34,7 @@
         "../node_modules/popper.js/dist/umd/popper.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/simplemde/dist/simplemde.min.js",
         "../node_modules/velocity-animate/velocity.min.js"
       ],
       "environmentSource": "environments/environment.ts",
