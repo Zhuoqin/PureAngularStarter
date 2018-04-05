@@ -13,6 +13,8 @@ export class AppComponent implements AfterViewInit {
 
     title = 'app';
     text = 'test';
+
+    htmlContent = 'test ngx editor';
     // Radar
     public radarChartType = 'radar';
 

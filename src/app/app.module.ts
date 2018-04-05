@@ -8,6 +8,9 @@ import {CommonModule} from '@angular/common';
 import {NgMaterialModule} from './ngMaterial.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarZoneComponent} from './car-zone.component';
+import {NgxEditorModule} from 'ngx-editor';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import {CarZoneComponent} from './car-zone.component';
         CommonModule,
         BrowserAnimationsModule,
         NgMaterialModule,
-        ChartsModule
+        ChartsModule,
+        FormsModule,
+        NgxEditorModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
